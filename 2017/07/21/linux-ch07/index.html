@@ -10,7 +10,7 @@
     
     <title>
         
-            Hello World | 
+            鸟哥的Linux私房菜--Ch07 | 
         
         Hexo
     </title>
@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="John Doe">
     <meta name="description" content="null">
-    <meta name="keywords" content="null">
+    <meta name="keywords" content="null,linux">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -58,9 +58,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://aagq.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Hello World | Hexo">
+    <meta property="og:title" content="鸟哥的Linux私房菜--Ch07 | Hexo">
     <meta property="og:description" content="null">
-    
+    <meta property="og:article:tag" content="linux"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -247,7 +247,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-number">1.</span> <span class="post-toc-text">Quick Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Chapter7-Linux文件与目录管理"><span class="post-toc-number">1.</span> <span class="post-toc-text">Chapter7  Linux文件与目录管理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-目录与路径"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1. 目录与路径</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-1-相对路径与绝对路径"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">1.1 相对路径与绝对路径</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-2-目录的相关操作"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">1.2 目录的相关操作</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-3-关于可执行文件路径的变量：-PATH"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">1.3 关于可执行文件路径的变量：$PATH</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-文件与目录管理"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2. 文件与目录管理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1-文件与目录的检视：ls"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">2.1 文件与目录的检视：ls</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-2-复制-删除与移动：cp-rm-mv"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">2.2 复制/删除与移动：cp,rm,mv</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-文件内容查阅"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3. 文件内容查阅</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-文件与目录的默认权限与隐藏权限"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">4. 文件与目录的默认权限与隐藏权限</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-1-文件默认权限：umask"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text">4.1 文件默认权限：umask</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-2-文件隐藏属性"><span class="post-toc-number">1.4.2.</span> <span class="post-toc-text">4.2 文件隐藏属性</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-3-文件特殊权限：-SUID，SGID，SBIT"><span class="post-toc-number">1.4.3.</span> <span class="post-toc-text">4.3 文件特殊权限： SUID，SGID，SBIT</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-4-观察文件类型：file"><span class="post-toc-number">1.4.4.</span> <span class="post-toc-text">4.4 观察文件类型：file</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5-指令与文件的搜寻"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">5. 指令与文件的搜寻</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-1-指令文件名的搜索"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">5.1 指令文件名的搜索</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-2-文件文件名的搜索"><span class="post-toc-number">1.5.2.</span> <span class="post-toc-text">5.2 文件文件名的搜索</span></a></li></ol></li></ol></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -284,7 +284,7 @@
         
     
             <p class="article-headline-p">
-                Hello World
+                鸟哥的Linux私房菜--Ch07
             </p>
         </div>
 
@@ -303,7 +303,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>John Doe</strong>
-        <span>7月 04, 2017</span>
+        <span>7月 21, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -324,7 +324,7 @@
         </button>
         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
             <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACX0lEQVR42u3aQXLDIBAEQP//08kLYs0sCMup5uSDLGinCsjsvn7+9Xjh4eHh4eHh4eE9jPeKR/Kti4nfPpnPcrE2PDw8vCO8ZFntMzkmB0fz4uHh4R3k/bXhJs8kS58dP/na8PDw8J7PSw6G5A35Zzw8PLzv5SVxw0rAgYeHh/ctvOQf/pWl5xHGx7IWPDw8vJiXL/f856P1PTw8PLyAV7c0lcFEfgW/pekKDw8P7wZevhEnwcGsPWt2MODh4eF9ipcHqcly2yaAWVGtiHHx8PDwbuDlpNlW3l6mV9oX8PDw8M7z2mt0W9RPWg3aA2kppcbDw8Nb4OVHRXtp3ntNj1aCh4eHdzOvvcguxQRlU8LF1RkPDw/vQ7yVVoBk4lkhbdaygIeHh3eGN1tQGy7kbQT5oVK0DuDh4eFt5a1PtiF4HbUj1K0DeHh4eFt5+baeINumq/xtw6YrPDw8vK28vMiUj2RDz5u68hAEDw8P7ySvKC+NLt95GNE2EODh4eGd560EDbMDoH1b3ryFh4eHd5I3K3e1xaqVQ2Upa8HDw8O7gfd+slk8sR46tEEzHh4e3hN4s4Mhj1/b8lsUZ+Dh4eEd57Vha/tjzaLeYi48PDy8m3ntWG8FaEti9RGCh4eHdzNvFi60Jav8wHj/Q0SXeDw8PLwjvHyjby/NLaCNlfHw8PA+y2s36FnMul5gu/hj4OHh4T2St6sZK79A5y1ceHh4eM/k7QIkz+elLzw8PLzzvNkWPyuV5bD2Yo2Hh4d3hpe/Loetl8G29ZTh4eHhbeX9v4GHh4eHh4eHh/eA8QszLGejpEq7JwAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACWUlEQVR42u3aS27DMAwFwNz/0u0BgqqPpKR8MFoFhu14vJDkRz5+vno88PDw8PDw8PDw3oz3iMfz+c/3+euc/Mjk2fDw8PBu8v6ZapeY9X3yM5Nro/vj4eHhXeStF4PqVfkUv75z+dnw8PDw3oyXP2J+fPIS8fDw8D6Fl/+uRhh4eHh4n8VLPviTB13D1svDi7MWPDw8vJhXLYDd/P2C+h4eHh7eklduaYqLYfMWhOYT4uHh4R3mJaHq3sLVfGz4YsDDw8Mb85KAYI5M7tlrIMDDw8O7z0si196UPW/kygtmeHh4eK/iramTbfSJ8li5MwIPDw9vEy+Z3JOYNcH0Fo8CGw8PD+8wb7KdncQTeTBRbsPCw8PDO8yrMibB7uS15ksUHh4e3mne/eWhGkZU27Dw8PDw7vCS0ld+PA8aqk0D0SvDw8PDO8ybwObb314Y0ewpw8PDwzvGy2OIavm/12i1IcbFw8PD28rrBbJ7C1291qvmFwMeHh7emNcr51cLV7s20NH/4uHh4V3k5VNzL3TotSlUG7Dw8PDwTvOqwcSk3NVbHjbU9/Dw8PCu8HLkrkJas1FgvaXGw8PDO8BrfvDHzVIn8Hh4eHiv5VXHJNitxhDNAhseHh7eYd4jHr1Jv7whHrwyPDw8vJu8ZDHoxa/V4lYS+Ja/GPDw8PCO8arb5TmyGkZsaLrCw8PDu86rbnbzcGHyL3h4eHifwutFFfmGvrcI4eHh4d3k5WFEL5yNooTWYoCHh4d3nzcvgM1Dh/x4OcbFw8PD28r7voGHh4eHh4eHh/cG4xettIGlh+0zawAAAABJRU5ErkJggg==">
         </ul>
     
 
@@ -336,7 +336,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        
+        <a class="post_tag-link" href="/tags/linux/">linux</a>
     </ul>
     
 
@@ -352,7 +352,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Hello World&url=http://aagq.github.io//2017/07/04/hello-world/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=鸟哥的Linux私房菜--Ch07&url=http://aagq.github.io//2017/07/21/linux-ch07/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -361,7 +361,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Hello World&url=http://aagq.github.io//2017/07/04/hello-world/index.html&via=John Doe" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=鸟哥的Linux私房菜--Ch07&url=http://aagq.github.io//2017/07/21/linux-ch07/index.html&via=John Doe" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -370,7 +370,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://aagq.github.io//2017/07/04/hello-world/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://aagq.github.io//2017/07/21/linux-ch07/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -379,7 +379,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://aagq.github.io//2017/07/04/hello-world/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://aagq.github.io//2017/07/21/linux-ch07/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -403,16 +403,169 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h1 id="Chapter7-Linux文件与目录管理"><a href="#Chapter7-Linux文件与目录管理" class="headerlink" title="Chapter7  Linux文件与目录管理"></a>Chapter7  Linux文件与目录管理</h1><h2 id="1-目录与路径"><a href="#1-目录与路径" class="headerlink" title="1. 目录与路径"></a>1. 目录与路径</h2><h3 id="1-1-相对路径与绝对路径"><a href="#1-1-相对路径与绝对路径" class="headerlink" title="1.1 相对路径与绝对路径"></a>1.1 相对路径与绝对路径</h3><pre><code>绝对路径：一定由根目录/写起
+相对路径：不是由/写起
+</code></pre><h3 id="1-2-目录的相关操作"><a href="#1-2-目录的相关操作" class="headerlink" title="1.2 目录的相关操作"></a>1.2 目录的相关操作</h3><pre><code>.     代表此层目录
+..    代表上一层目录
+-     代表前一个工作目录
+～    代表目前使用者身份所在的主文件夹
+～account 代表account这个使用者的主文件夹（account是帐号名称）
 
+cd   变换目录
+pwd  显示当前目录
+mkdir 创建一个新的目录
+rmdir 删除一个空的目录
+rm -r file 删除所有的file目录
+</code></pre><h3 id="1-3-关于可执行文件路径的变量：-PATH"><a href="#1-3-关于可执行文件路径的变量：-PATH" class="headerlink" title="1.3 关于可执行文件路径的变量：$PATH"></a>1.3 关于可执行文件路径的变量：$PATH</h3><pre><code>mv /a/file /b  将file移动到b目录下
+echo $PATH 查看path
+</code></pre><h2 id="2-文件与目录管理"><a href="#2-文件与目录管理" class="headerlink" title="2. 文件与目录管理"></a>2. 文件与目录管理</h2><h3 id="2-1-文件与目录的检视：ls"><a href="#2-1-文件与目录的检视：ls" class="headerlink" title="2.1 文件与目录的检视：ls"></a>2.1 文件与目录的检视：ls</h3><pre><code>ls -a：查看全部的文件（包括隐藏文件）
+   -d:仅列出目录本身
+   -l:长数据串行出，包括文件的属性与权限
+
+     蓝色表示目录，白色为一般文件
+</code></pre><h3 id="2-2-复制-删除与移动：cp-rm-mv"><a href="#2-2-复制-删除与移动：cp-rm-mv" class="headerlink" title="2.2 复制/删除与移动：cp,rm,mv"></a>2.2 复制/删除与移动：cp,rm,mv</h3><pre><code>cp [-aipr] 来源文件 目标文件
+    -a:复制文件与源文件一模一样
+    -i:若目标文件存在，在覆盖时会先询问动作的进行
+    -p:连同文件的属性一起复制
+    -r:递归持续复制，用于目录的复制
+
+rm 文件或目录
+mv 来源文件 目标文件或更名
+</code></pre><h2 id="3-文件内容查阅"><a href="#3-文件内容查阅" class="headerlink" title="3. 文件内容查阅"></a>3. 文件内容查阅</h2><pre><code>cat:从第一行开始显示文件内容
+tac:从最后一行开始显示
+nl:显示的时候，顺便输出行号
+more:一页一页显示文件内容
+    空格键：代表向下翻一页
+    /str:向下搜索
+    :f:显示出文件名和目前显示的行数
+    q:离开
+    b:往前翻页
+touch:修改文件时间或创建新文件
+ll=ls -l
+
+文件有三个主要的变动参数：
+
+- modification time(mtime):文件内容发生变化，此时间会变
+- status time(ctime):文件属性或权限发生变化
+- access time(atime):文件内容被读取时
+
+head:只看头几行
+tail:只看最后几行
+od:以二进制的方式读取文件内容
+</code></pre><h2 id="4-文件与目录的默认权限与隐藏权限"><a href="#4-文件与目录的默认权限与隐藏权限" class="headerlink" title="4. 文件与目录的默认权限与隐藏权限"></a>4. 文件与目录的默认权限与隐藏权限</h2><h3 id="4-1-文件默认权限：umask"><a href="#4-1-文件默认权限：umask" class="headerlink" title="4.1 文件默认权限：umask"></a>4.1 文件默认权限：umask</h3><pre><code>umask:目前使用者在创建文件或目录时的权限默认值
+
+  -    查阅umask: 
+    1. 直接在终端输入umask，可看到数字形态的权限设置分数（4个数字，第一个是特殊权限用的）
+    2. 加入 -S(Symbolic)选项，可看到符号形式的权限
+
+  - 设置umask: umask 002(直接写数字）    
+      umask 的后三位数字显示=默认值需要减去的权限值
+</code></pre><p>默认权限：</p>
+<pre><code>创建文件：默认没有可执行权限，最大为666分，即 -rw-rw-rw-
+创建目录：默认权限均开放，即为777,即 drwxrwxrwx
+</code></pre><p>eg. umask = 022，表示 u=rwx,g=rx,o=rx</p>
+<pre><code>创建文件时：（-rw-rw-rw-) - (-----w--w-) ==&gt;-rw-r--r--
+创建目录时：（drwxrwxrwx) - (-----w--w-) ==&gt;drwxr-xr-x
+</code></pre><h3 id="4-2-文件隐藏属性"><a href="#4-2-文件隐藏属性" class="headerlink" title="4.2 文件隐藏属性"></a>4.2 文件隐藏属性</h3><pre><code>chattr    设置文件隐藏属性
+chattr [+-=][ASacdistu] 文件或目录
+    +  增加某一个特殊参数，其他原本存在参数不动
+    -  移除某一个特殊参数，其他原本存在参数不动
+    =  设置一定，且仅有后面接的参数
+    A  设置了此属性，文件的atime不会修改。
+    S  一般文件是非同步写入磁盘的，如果加上S，当你修改文件时就会同步写入磁盘。
+    a  设置此属性后，文件只能增加数据不能删除也不能修改
+    c  设置此属性后，会自动地对此文件压缩，在读取时自动解压,但是在存储的时候先压缩再存储。
+    d  当dump程序被执行那个的时候，设置此属性文件不会被备份
+    i  设置此属性后，文件不能删除或者改名或者写入新增数据
+    s  设置此属性后，文件删除后就完全被移除磁盘空间，所以误删了就没法挽回。
+    u   与s相反，误删可以找回。
+</code></pre><p>ps</p>
+<pre><code> a与i的设置最常见，很多设置要root才能进行。
+
+
+eg.     touch test
+    sudo chattr +i test
+    rm test    
+    (失败）
+    sudo chattr -i test             
+
+lsattr 显示文件隐藏属性
+lsattr [-adR] 文件或者目录
+    -a 将隐藏文件的属性也显示出来
+    -d 如果连接的是目录，仅列出目录本身的属性而非目录内的文件名
+    -R 连同子目录的数据也一并列出
+</code></pre><h3 id="4-3-文件特殊权限：-SUID，SGID，SBIT"><a href="#4-3-文件特殊权限：-SUID，SGID，SBIT" class="headerlink" title="4.3 文件特殊权限： SUID，SGID，SBIT"></a>4.3 文件特殊权限： SUID，SGID，SBIT</h3><ul>
+<li><p>Set UID（s出现在文件拥有者的x权限上）</p>
+<ul>
+<li>SUID权限只对二进制程序有效</li>
+<li>这行者对于给程序需要具有x的可执行权限</li>
+<li>本权限仅在执行该程序的过程中有效</li>
+<li>执行者将具有该程序拥有这种的权限</li>
+<li>对目录无效</li>
+</ul>
+</li>
+<li><p>Set GID（s出现在群组的x权限上）</p>
+<ul>
+<li>SGID对二进制程序有用</li>
+<li>可以针对文件或目录来设置</li>
+<li>执行者在执行过程中将会获得该程序群组的支持</li>
+<li>使用者若对于此目录具有r与x的权限时，该使用者能够进入此目录</li>
+<li>使用者在此目录下的有效群组将变成该目录的群组</li>
+<li>用途：若使用者在此目录下具有w的权限，则使用者所创建的新文件，该新文件的群组与次目录的群组相同。</li>
+</ul>
+</li>
+<li><p>Sticky Bit</p>
+<ul>
+<li>SBIT 只针对目录有效，对文件无效</li>
+<li>当使用者对于此目录具有w,x权限，即有写入的权限时。</li>
+<li>当使用者在该目录下创建文件或目录时，仅有自己与root才有权力删除。</li>
+</ul>
+</li>
+<li><p>SUID/SGID/SBIT权限设定</p>
+<pre><code>- 数字法：
+</code></pre><p>  在三个数字的组合前加一个数字：<br>  4 –SUID<br>  2 –SGID<br>  1 –SBIT</p>
+</li>
+</ul>
+<p>eg. cd /tmp<br>    touch test<br>    chmod 4755 test; ls -l test (加入SUID权限）<br>–  -rwsr-xr-x 1 agq agq 0 Jul 22 18:13 test</p>
+<pre><code>chmod 6755 test; ls -l test (加入SUID，SGID权限）
+</code></pre><p>–  -rwsr-sr-x 1 agq agq 0 Jul 22 18:13 test</p>
+<pre><code>chmod 7666 test; ls -l test (具有空的SUID/SGID）
+</code></pre><p>–  -rwSrwSrwT 1 agq agq 0 Jul 22 18:13 test</p>
+<p>注意：最后一个例子出现大写的S，T。原因是user,group,others 都没有x这个可执行标志，所以S，T代表的就是空的。SUID表示该文件在执行的时候，具有文件拥有者的权限，但是文件拥有者都无法执行，其他的当然也就没有，所以是空的。</p>
+<pre><code>- 符号法
+ SUID=u+s
+ SGID=g+s
+ SBIT=o+t
+</code></pre><p>eg.  chmod u=rwxs,go=x test; ls -l test<br>–  -rws–x–x 1 agq agq 0 Jul 22 18:13 test<br>     chmod g+s,o+t test; ls -l test<br>–  -rws–s–t 1 agq agq 0 Jul 22 18:13 test</p>
+<h3 id="4-4-观察文件类型：file"><a href="#4-4-观察文件类型：file" class="headerlink" title="4.4 观察文件类型：file"></a>4.4 观察文件类型：file</h3><pre><code>file 文件名
+</code></pre><h2 id="5-指令与文件的搜寻"><a href="#5-指令与文件的搜寻" class="headerlink" title="5. 指令与文件的搜寻"></a>5. 指令与文件的搜寻</h2><h3 id="5-1-指令文件名的搜索"><a href="#5-1-指令文件名的搜索" class="headerlink" title="5.1 指令文件名的搜索"></a>5.1 指令文件名的搜索</h3><pre><code>which [-a] command
+     -a 将所有由PATH目录中可以找到的指令均列出，而不止第一个被找到的指令名称
+</code></pre><p>注意： which 默认找PATH内所规范的目标</p>
+<h3 id="5-2-文件文件名的搜索"><a href="#5-2-文件文件名的搜索" class="headerlink" title="5.2 文件文件名的搜索"></a>5.2 文件文件名的搜索</h3><pre><code>- whereis(由一些特定的目录中寻找文件文件名）
+    whereis[-bmsu] 文件或目录名
+        -l 可以列出whereis 会去查询的几个主要目录
+        -b 只查找Binary格式的文件
+        -m 执照说明文档manual 路径下的文件
+        -s 只找source来源文件
+        -u 搜寻不再上述三个项目中的其他特殊文件
+
+- locate
+    locate [-iclSr] keyword
+        -i 忽略大小写的差异
+        -c 不输出文件名，仅计算找到的文件数
+        -l 仅输出几行，例如输出五行 -l 5
+        -S 输出locates所使用的数据库文件的相关信息，包括该数据库记录的文件和目录数目等。
+        -r 后面可接正则表达式的显示方式
+
+- updatedb 更新数据库
+
+- find 
+  find [PATH] [option] [action]
+  - -mtime n: n为数字，表示在n天之前的一天内被改过的文件名称 n天到n+1天
+  - -mtime +n: 列出在n天前被改动的文件名称(不含n天本身）大于等于n天前
+  - -mtime -n:    类出在n天内被改动的文件名称（含n天）小于等于n天内
+  - -newer file: file 为一个存在的文件。列出比file 还要新的文件名称
+</code></pre>
     
 
     
@@ -438,21 +591,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/07/05/linux-ch03/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2017/07/04/linux-ch02/" id="post_nav-older" class="next-content">
+        <a href="/2017/07/16/linux-ch06/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
