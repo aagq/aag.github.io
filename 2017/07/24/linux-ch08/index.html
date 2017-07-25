@@ -10,7 +10,7 @@
     
     <title>
         
-            鸟哥的Linux私房菜--Ch01 | 
+            鸟哥的Linux私房菜--Ch08 | 
         
         Hexo
     </title>
@@ -58,7 +58,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://aagq.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="鸟哥的Linux私房菜--Ch01 | Hexo">
+    <meta property="og:title" content="鸟哥的Linux私房菜--Ch08 | Hexo">
     <meta property="og:description" content="null">
     <meta property="og:article:tag" content="linux"> 
 
@@ -247,7 +247,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#chapter1-What-is-Linux"><span class="post-toc-number">1.</span> <span class="post-toc-text">chapter1 What is Linux?</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Linux-是什么"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Linux 是什么</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Linux-的核心版本"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Linux 的核心版本</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Linux-distributions"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Linux distributions</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Chapter8-Linux磁盘与文件系统管理"><span class="post-toc-number">1.</span> <span class="post-toc-text">Chapter8 Linux磁盘与文件系统管理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8-1-认识linux文件系统"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">8.1 认识linux文件系统</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8-1-1-磁盘组成与分区的复习"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">8.1.1 磁盘组成与分区的复习</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8-1-2文件系统特性"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">8.1.2文件系统特性</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8-2-文件系统的简单操作"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">8.2 文件系统的简单操作</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8-3-磁盘的分区、格式化、检验与挂载"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">8.3 磁盘的分区、格式化、检验与挂载</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8-4-设置开机挂载"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">8.4 设置开机挂载</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8-5-内存交换空间的创建"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">8.5 内存交换空间的创建</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8-6-文件系统的特殊观察与操作"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">8.6 文件系统的特殊观察与操作</span></a></li></ol></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -284,7 +284,7 @@
         
     
             <p class="article-headline-p">
-                鸟哥的Linux私房菜--Ch01
+                鸟哥的Linux私房菜--Ch08
             </p>
         </div>
 
@@ -303,7 +303,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>John Doe</strong>
-        <span>7月 03, 2017</span>
+        <span>7月 24, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -324,7 +324,7 @@
         </button>
         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
             <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACZklEQVR42u3awW7CQAwEUP7/p9trJVQ6481uKHo5oUKJH4fYmvXj66OvBx4eHh4eHh4e3pvxHvH18/PPr/+45S/f9vyZldrw8PDwTvKS4p5v+bqsBJb/lElteHh4eOd567dJGsDsvnlteHh4eO/GmwF+ayqvx3Q8PDy8z+C1zSDH4OHh4f1HXv6Ib0uZRcM3ZC14eHh4Me/aUq59/Rbne3h4eHgrK01BDNEGu/l31ktXeHh4eBt4yVpAuyyVD8d5MJFUi4eHh3cXbz1gbdew2gh4KaXGw8PDu4j3OnpIHsdJ8JqP1PnRFx4eHt55Xltcu8waPcrLplIcgOHh4eFt4yUP33yMXhmUZzXg4eHhneTNDp/ylYI80k3ejcZ6PDw8vCO8NnpoF0xXRvCcjYeHh3cXbxat5qFD21ry5S08PDy8M7yV0LZdk2qj23b9Cw8PD+8krw1h8zXW9tG/8hc8PDy8M7w8esiDhnbIzqPbKM7Aw8PDO8jLD/jbJYDZAD0LdvHw8PB28/LidrSTWUsoVgfw8PDwNvCueljP4ow8Mk7weHh4eGd4bXtYOf6fjexta8HDw8M7w7s2IMhj3yiWjZcG8PDw8M7wZrFsGyvMoo38v/Dw8PBO8torYcyOx5IDueiTeHh4eJt57WH/jlE7oS71PTw8PLwNvPbwfjZwz36ahIqHh4d3F29lzE0aSdJg2rE72ozAw8PDu5W3skDQ3ncWSeDh4eH9X15UShl8REEzHh4e3kFefuiVxBArqwP5wVvRGPDw8PAu5Z05AFspOm8VeHh4eLt5n3fh4eHh4eHh4eG9wfUNVsJ8uMpELGEAAAAASUVORK5CYII=">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACZklEQVR42u3bQXLDIAwF0Nz/0u0BMiX/A8Zu5rHqdFLM80Iokvr6+er1wsPDw8PDw8PDexjvFa/3z7/v89dn8t+snA0PDw/vJO9DqB0+eLzP+EW0z432x8PDwzvIG18G7V/lIX68c302PDw8vIfxkkA/PvrcFYKHh4f3HbwkuLclDDw8PLz/xUu+8I+D+ziZbne4odaCh4eHF/PaBtjJn2/o7+Hh4eENee3Kg/X6CMLkCfHw8PAu5iVF1b2Nq/W14RsDHh4e3gJvXDJIwn2OTK6QuQECPDw8vPO8XUE8fx15uytvmOHh4eHdxStaTWUafUV7rCjj4uHh4W3itU2pvGCRv6A8sY7YeHh4eBfz2gLBHCC/eNr98fDw8M7z8keuFH+TNH2l1IuHh4d3kpfDorZ9OUrVNsCik+Ph4eEd4eUJdD5+mo+rziE3TEbg4eHhTfHWAXOXykoxohi6wsPDw7uA1x40b33lKXje4pqsUuPh4eFdwEsC+vqD22S6LUPg4eHhneSthOz2HwBWEujossHDw8O7mDdXUFgZ619PzesyLh4eHt5WXn6IPEzPFXzblB0PDw/vaby8ZbXSSFspARffGPDw8PC28trRqLmC7148Hh4e3r28ur0Uj5bmKXLL+LAzHh4e3sW8V7zadtdcKXblleHh4eGd5LWF3TZk7yo6bBsdwMPDw9vEa0N8O2Z6xcWDh4eH93xeXvzNk+kk6G9IqfHw8PAexstbX22ynjfD8PDw8M7z2mLEyuhAXsZNToiHh4d3njfX1moT7rmhqw1lXDw8PLytvO9beHh4eHh4eHh4D1i/bJhPAqttkAwAAAAASUVORK5CYII=">
         </ul>
     
 
@@ -352,7 +352,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=鸟哥的Linux私房菜--Ch01&url=http://aagq.github.io//2017/07/03/linux-ch1/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=鸟哥的Linux私房菜--Ch08&url=http://aagq.github.io//2017/07/24/linux-ch08/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -361,7 +361,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=鸟哥的Linux私房菜--Ch01&url=http://aagq.github.io//2017/07/03/linux-ch1/index.html&via=John Doe" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=鸟哥的Linux私房菜--Ch08&url=http://aagq.github.io//2017/07/24/linux-ch08/index.html&via=John Doe" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -370,7 +370,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://aagq.github.io//2017/07/03/linux-ch1/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://aagq.github.io//2017/07/24/linux-ch08/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -379,7 +379,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://aagq.github.io//2017/07/03/linux-ch1/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://aagq.github.io//2017/07/24/linux-ch08/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -403,18 +403,30 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="chapter1-What-is-Linux"><a href="#chapter1-What-is-Linux" class="headerlink" title="chapter1 What is Linux?"></a>chapter1 What is Linux?</h1><h2 id="Linux-是什么"><a href="#Linux-是什么" class="headerlink" title="Linux 是什么"></a>Linux 是什么</h2><ol>
-<li>是一组软件</li>
-<li>操作提同除了有效率地控制这些硬件资源的分配，并且提供计算机运作所需要的功能（除网络功能）。</li>
-<li>Linux 是 open source 的操作系统，所以它的程序可以被修改成适合在各种机器上面运行，即 具有 <strong>可移植性</strong> 。</li>
-</ol>
-<h2 id="Linux-的核心版本"><a href="#Linux-的核心版本" class="headerlink" title="Linux 的核心版本"></a>Linux 的核心版本</h2><pre><code> 2.6.18-92.el5
-主版本.次版本.释出版本-修改版本
-    - 主、次版本为奇数：发展中的版本
-- 主、次版本为偶数：稳定版本
-</code></pre><p>注：通常所说的Linux 版本指的是核心版本。还有，Linux 其实就是一个操作系统最底层的核心及其提供的核心工具。</p>
-<h2 id="Linux-distributions"><a href="#Linux-distributions" class="headerlink" title="Linux distributions"></a>Linux distributions</h2><pre><code>Linux Kernel + 软件 + tools ——&gt; 可完整安装的程序 ——&gt; linux distritbution
-</code></pre>
+        <h1 id="Chapter8-Linux磁盘与文件系统管理"><a href="#Chapter8-Linux磁盘与文件系统管理" class="headerlink" title="Chapter8 Linux磁盘与文件系统管理"></a>Chapter8 Linux磁盘与文件系统管理</h1><h2 id="8-1-认识linux文件系统"><a href="#8-1-认识linux文件系统" class="headerlink" title="8.1 认识linux文件系统"></a>8.1 认识linux文件系统</h2><h3 id="8-1-1-磁盘组成与分区的复习"><a href="#8-1-1-磁盘组成与分区的复习" class="headerlink" title="8.1.1 磁盘组成与分区的复习"></a>8.1.1 磁盘组成与分区的复习</h3><pre><code>- 磁盘的组成：
+
+    - 圆形的**盘片**（记录数据）
+
+    - 机械手臂与机械手臂上的磁头（读写盘片上的数据）
+
+    - 主轴马达（用于转动盘片，让机械手臂的磁头在盘片上读写数据）。
+
+- 盘片的物理组成
+
+    - 扇区：最小的物理存储单位，目前主要有512byte,4K两种
+
+    - 柱面：扇形组成的圆面
+
+    - 磁盘分区：
+
+        - 限制较多的MBR分区表（第一个扇区最重要，包括主要开机区MBR（446Bytes),分区表(64Bytes))
+
+        - 限制较少的GPT分区表 (除了分区数量扩充较多外，支持的磁盘容量也可以超过2TB)
+
+- /dev/sd[a-p][1-128]: 为实体磁盘的磁盘文件名
+
+- /dev/vd[a-d][1-128]: 为虚拟磁盘的磁盘文件名
+</code></pre><h3 id="8-1-2文件系统特性"><a href="#8-1-2文件系统特性" class="headerlink" title="8.1.2文件系统特性"></a>8.1.2文件系统特性</h3><h2 id="8-2-文件系统的简单操作"><a href="#8-2-文件系统的简单操作" class="headerlink" title="8.2 文件系统的简单操作"></a>8.2 文件系统的简单操作</h2><h2 id="8-3-磁盘的分区、格式化、检验与挂载"><a href="#8-3-磁盘的分区、格式化、检验与挂载" class="headerlink" title="8.3 磁盘的分区、格式化、检验与挂载"></a>8.3 磁盘的分区、格式化、检验与挂载</h2><h2 id="8-4-设置开机挂载"><a href="#8-4-设置开机挂载" class="headerlink" title="8.4 设置开机挂载"></a>8.4 设置开机挂载</h2><h2 id="8-5-内存交换空间的创建"><a href="#8-5-内存交换空间的创建" class="headerlink" title="8.5 内存交换空间的创建"></a>8.5 内存交换空间的创建</h2><h2 id="8-6-文件系统的特殊观察与操作"><a href="#8-6-文件系统的特殊观察与操作" class="headerlink" title="8.6 文件系统的特殊观察与操作"></a>8.6 文件系统的特殊观察与操作</h2>
     
 
     
@@ -440,21 +452,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/07/04/linux-ch02/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2017/07/02/linux-ch0/" id="post_nav-older" class="next-content">
+        <a href="/2017/07/21/linux-ch07/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
